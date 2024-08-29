@@ -11,7 +11,7 @@ import {
 import * as iconv from 'iconv-lite';
 iconv.encodingExists('utf8');
 
-import { TemplateData, TemplateHandler } from 'easy-template-x';
+import { TemplateData, TemplateHandler } from 'squared-easy-template-x';
 
 const libre = require('libreoffice-convert');
 libre.convertAsync = require('util').promisify(libre.convert);
@@ -37,8 +37,8 @@ encodeDecodeOptions.sort((a, b) => {
 
 export class GenerateReport implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Generate Report',
-		name: 'generateReport',
+		displayName: 'squared Generate Report',
+		name: 'squaredGenerateReport',
 		icon: 'file:report_template.svg',
 		group: ['transform'],
 		version: 1,
