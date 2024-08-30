@@ -1,5 +1,5 @@
-import { IExecuteFunctions } from 'n8n-core';
 import {
+	IExecuteFunctions,
 	IDataObject,
 	INodeExecutionData,
 	INodePropertyOptions,
